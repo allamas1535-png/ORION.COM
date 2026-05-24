@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Asistente Inteligente Orion</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<header>
+
+    <div class="logo-box">
+
+        <img src="logoorion.jpeg" class="logo">
+
+        <h1>ORION</h1>
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">Inicio</a>
+
+        <a href="catalogo.html">Catálogo</a>
+
+        <a href="chatbot.html">IA Orión</a>
+
+    </nav>
+
+    <div class="icons">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+    </div>
+
+</header>
+<body>
+
+<section class="chat-page">
+
+    <h1>Asistente IA Orión</h1>
+
+    <div id="chat"></div>
+
+    <input
+    type="text"
+    id="pregunta"
+    placeholder="Haz una pregunta">
+
+    <button onclick="enviar()">
+
+        Enviar
+
+    </button>
+
+</section>
+
+<script>
+
+function enviar(){
+
+    let pregunta =
+    document.getElementById("pregunta")
+    .value
+    .toLowerCase();
+
+    let respuesta = "";
+
+    if(
+        pregunta.includes("precio")
+    ){
+
+        respuesta =
+        "Los precios están disponibles en el catálogo.";
+
+    }
+
+    else if(
+        pregunta.includes("envio")
+    ){
+
+        respuesta =
+        "Realizamos envíos dependiendo de la ubicación.";
+
+    }
+
+    else if(
+        pregunta.includes("pago")
+    ){
+
+        respuesta =
+        "Puedes finalizar tu compra por WhatsApp.";
+
+    }
+
+    else{
+
+        respuesta =
+        "No tenemos solución para tu pregunta. Escríbenos por WhatsApp.";
+
+    }
+
+    document.getElementById("chat")
+    .innerHTML +=
+
+    "<p><b>Tú:</b> " +
+    pregunta +
+    "</p>" +
+
+    "<p><b>IA:</b> " +
+    respuesta +
+    "</p>";
+
+}
+
+</script>
+
+</body>
+</html>

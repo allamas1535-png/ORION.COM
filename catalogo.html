@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Catálogo Orion</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+    <div class="logo-box">
+
+        <img src="logoorion.jpeg" class="logo">
+
+        <h1>ORION</h1>
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">Inicio</a>
+
+        <a href="chatbot.html">Asistente Orion</a>
+
+    </nav>
+
+    <a href="carrito.html">
+
+        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+
+    </a>
+
+</header>
+
+<!-- CATÁLOGO -->
+
+<section class="catalogo-page">
+
+    <h1 class="titulo-catalogo">
+
+        Nuestro Catálogo
+
+    </h1>
+
+    <!-- BUSCADOR -->
+
+    <div class="busqueda-box">
+
+        <input
+        type="text"
+        id="busqueda"
+        placeholder="Buscar producto o categoría..."
+        onkeyup="buscarProductos()">
+
+    </div>
+
+    <!-- BOTONES CATEGORÍAS -->
+
+    <div class="categorias">
+
+        <button onclick="mostrarCategoria('destacados')">
+            Destacados
+        </button>
+
+        <button onclick="mostrarCategoria('decoracion')">
+            Decoración Hogar
+        </button>
+
+        <button onclick="mostrarCategoria('bebes')">
+            Bebés
+        </button>
+
+        <button onclick="mostrarCategoria('iluminacion')">
+            Iluminación
+        </button>
+
+        <button onclick="mostrarCategoria('accesorios')">
+            Accesorios
+        </button>
+
+        <button onclick="mostrarCategoria('cocina')">
+            Utensilios Cocina
+        </button>
+
+    </div>
+
+    <!-- DESTACADOS -->
+
+    <section class="categoria-section categoria destacados">
+
+        <h2>Destacados ✨✨</h2>
+
+        <div class="productos-grid">
+
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/LAMPARA VOLCAN.jpg">
+
+                <h3>Lámpara humidificadora tipo volcán</h3>
+
+                <p>
+
+                    Lámpara humidificadora tipo Volcán, un elemento decorativo diseñado para simular una erupción volcánica mediante el movimiento de pequeñas esferas rojas (que actúan como "lava") en un contenedor de agua.
+
+                </p>
+
+                <span>$50.000</span>
+
+                <button onclick="agregarCarrito('Lámpara humidificadora tipo volcán',50000)">
+                    Agregar
+                </button>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/PISTOLA MASAJEADORA.webp">
+
+                <h3>Pistola masajeadora frío ~ calor</h3>
+
+                <p>
+
+                    La pistola masajeadora frío - calor ofrece una experiencia de relajación versátil, combinando terapia de calor y frío para aliviar tensiones musculares. Su diseño ergonómico permite un manejo cómodo, mientras que diversas configuraciones de temperatura adaptan el tratamiento a tus necesidades específicas. Ideal para el uso en casa o en el gimnasio, promueve la recuperación y el bienestar general.
+
+                </p>
+
+                <span>$50.000</span>
+
+                <button onclick="agregarCarrito('Pistola masajeadora frío ~ calor',50000)">
+                    Agregar
+                </button>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ARBOL DECORATIVO.jfif">
+
+                <h3>Árbol Decorativo LED</h3>
+
+                <p>
+
+                   Con luces LED brillantes, este árbol decorativo aporta un toque de calidez y estilo a cualquier espacio. Ideal para celebraciones, su diseño elegante se adapta a diversas decoraciones.
+
+Fácil de instalar y utilizar, ofrece una iluminación suave y acogedora. Perfecto para crear un ambiente festivo o simplemente para embellecer el hogar durante todo el año.
+
+                </p>
+
+                <span>$22.000</span>
+
+                <button onclick="agregarCarrito('Árbol decorativo LED',22000)">
+                    Agregar
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- DECORACIÓN HOGAR -->
+
+    <section class="categoria-section categoria decoracion">
+
+        <h2>Decoración Hogar 🏠</h2>
+
+        <div class="productos-grid">
+
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/DECORATIVO CIRCULAR.jpg">
+
+                <h3>Árticulo decorativo diseño pájaro</h3>
+
+                <p>
+
+                    Este artículo decorativo presenta un encantador diseño ideal para añadir un toque de naturaleza a cualquier espacio. Fabricado con materiales de alta calidad, su acabado detallado resalta la belleza del diseño.
+
+                    Perfecto para estanterías, mesas o como parte de una colección, este elemento decorativo complementará la estética de tu hogar de manera armoniosa.
+                </p>
+
+                <span>$22.000</span>
+
+                <button onclick="agregarCarrito('Árticulo decorativo diseño pájaro',22000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ARBOL DECORATIVO.jfif">
+
+                <h3>Árbol Decorativo LED</h3>
+
+                <p>
+
+                   Con luces LED brillantes, este árbol decorativo aporta un toque de calidez y estilo a cualquier espacio. Ideal para celebraciones, su diseño elegante se adapta a diversas decoraciones.
+
+                  Fácil de instalar y utilizar, ofrece una iluminación suave y acogedora. Perfecto para crear un ambiente festivo o simplemente para embellecer el hogar durante todo el año.
+
+                </p>
+
+                <span>$22.000</span>
+
+                <button onclick="agregarCarrito('Árbol decorativo LED',22000)">
+                    Agregar
+                </button>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/GEOMETRICO.webp">
+
+                <h3>Artículo decorativo Candelabro geométrico</h3>
+
+                <p>
+
+                    Con un diseño moderno y elegante, el candelabro geométrico aporta un toque contemporáneo a cualquier espacio. Fabricado en materiales duraderos, es ideal para sostener velas y crear una atmósfera acogedora. Su estructura única no solo lo convierte en un soporte funcional, sino también en una pieza decorativa que complementa diversos estilos de interior.
+
+                </p>
+
+                <span>$20.000</span>
+
+                <button onclick="agregarCarrito('Artículo decorativo Candelabro geométrico',20000)">
+                    Agregar
+                </button>
+
+            </div>
+             <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/DECORATIVO SUCULENTA.webp">
+
+                <h3>Artículo decorativo suculenta</h3>
+
+                <p>
+                    Este accesorio decorativo suculenta es ideal para añadir un toque de frescura y estilo a cualquier espacio. Su diseño realista simula la belleza natural de las suculentas,
+
+Perfecto para mesas, estanterías o escritorios, este accesorio es una opción versátil que complementa diversas decoraciones.
+
+                
+
+                </p>
+
+                <span>$20.000</span>
+
+                <button onclick="agregarCarrito('Artículo decorativo Suculenta',20000)">
+                    Agregar
+                </button>
+
+            </div>
+
+             <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ROSAS.webp">
+
+                <h3>Decoración de pared rosas</h3>
+
+                <p>
+
+                    La decoración de pared rosas ofrece un toque elegante y romántico a cualquier espacio. Fabricadas con materiales de alta calidad, estas rosas son ideales para realzar la estética de salas, dormitorios o espacios de trabajo.
+
+Su diseño versátil permite combinarlas con diferentes estilos de decoración, desde lo moderno hasta lo clásico. Además, son fáciles de instalar y mantener, lo que las convierte en una opción práctica para quienes buscan embellecer su entorno sin complicaciones.
+
+                </p>
+
+                <span>$35.000</span>
+
+                <button onclick="agregarCarrito('Decoración de pared rosas',35000)">
+                    Agregar
+                </button>
+
+            </div>
+             <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/RELOJ DIGITAL.jpg">
+
+                <h3>Despertador Digital</h3>
+
+                <p>
+
+                    Con un diseño moderno y fácil de leer, el despertador reloj digital ofrece una visualización clara de la hora.
+
+Cuenta con funciones de alarma ajustables y un sistema de snooze para aquellos que necesitan un poco más de tiempo para despertarse. Su pantalla LED es ideal para cualquier habitación, proporcionando comodidad y funcionalidad en un solo dispositivo.
+
+                </p>
+
+                <span>$22.000</span>
+
+                <button onclick="agregarCarrito('Despertador Reloj Digital',22000)">
+                    Agregar
+                </button>
+
+            </div>
+             <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/DISPENSADOR SENSORIAL.jpg">
+
+                <h3>Dispensador Sensorial</h3>
+
+                <p>
+
+                    Diseñado para ofrecer una experiencia interactiva, el dispensador sensoriale permite una fácil distribución de productos a través de un sistema intuitivo.
+
+Su mecanismo de activación sensible garantiza un uso eficiente,
+
+Compacto y versátil, se adapta a diversas necesidades, facilitando el acceso a materiales sensoriales.
+                </p>
+
+                <span>$29.000</span>
+
+                <button onclick="agregarCarrito('Dispensador sensorial',22000)">
+                    Agregar
+                </button>
+
+            </div>
+             <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ESPEJOS DECORATIVOS.webp">
+
+                <h3>Espejos decorativos en forma de Gota</h3>
+
+                <p>
+
+                    Los espejos decorativos en forma de gota aportan un toque elegante y moderno a cualquier espacio. Su diseño único no solo refleja la luz, sino que también crea una sensación de amplitud en la habitación.
+
+son ideales para decorar paredes en salones, dormitorios o pasillos. Su forma orgánica se adapta a diversos estilos de decoración, desde lo contemporáneo hasta lo bohemio.
+
+Fáciles de colgar y mantener, estos espejos son una opción funcional y estética para realzar la belleza de tu hogar.
+                </p>
+
+                <span>$35.000</span>
+
+                <button onclick="agregarCarrito('Espejos decorativos en forma de Gota',35000)">
+                    Agregar
+                </button>
+
+            </div>
+             <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/HUMIFICADOR AROMAS.jpg">
+
+                <h3>Humificador de aromas</h3>
+
+                <p>
+
+                    Con un diseño innovador, el unificador de aromas permite mezclar y equilibrar fragancias de manera efectiva. Ideal para crear ambientes agradables, este dispositivo es fácil de usar y se adapta a cualquier espacio.
+
+Su funcionamiento silencioso y su capacidad de ajuste de intensidad garantizan una experiencia personalizada. Perfecto para hogares, oficinas o eventos, transforma cualquier lugar en un refugio aromático.
+
+                </p>
+
+                <span>$30.000</span>
+
+                <button onclick="agregarCarrito('Humificador de Aromas',30000)">
+                    Agregar
+                </button>
+
+            </div>
+
+              <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/LAMPARA MARIPOSA.webp">
+
+                <h3>Lampara Mariposa</h3>
+
+                <p>
+
+                    Este artículo decorativo presenta un encantador diseño ideal para añadir un toque de naturaleza a cualquier espacio. Fabricado con materiales de alta calidad, su acabado detallado resalta la belleza del diseño.
+
+                    Perfecto para estanterías, mesas o como parte de una colección, este elemento decorativo complementará la estética de tu hogar de manera armoniosa.
+                </p>
+
+                <span>$18.000</span>
+
+                <button onclick="agregarCarrito('Lámpara mariposa',18000)">
+                    Agregar
+                </button>
+               
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/LAMPARA VOLCAN.jpg">
+
+                <h3>Lámpara humidificadora tipo volcán </h3>
+
+                <p>
+Lámpara humidificadora tipo Volcán, un elemento decorativo diseñado para simular una erupción volcánica mediante el movimiento de pequeñas esferas rojas (que actúan como "lava") en un contenedor de agua.
+                </p>
+
+                <span>$50.000</span>
+
+                <button onclick="agregarCarrito('Lámpara humidificadora tipo volcán',50000)">
+                    Agregar
+                </button>
+
+            </div>
+            </div>
+
+              
+
+        </div>
+
+    </section>
+
+    <!-- BEBÉS -->
+
+    <section class="categoria-section categoria bebes">
+
+        <h2>Bebés 🐥</h2>
+
+        <div class="productos-grid">
+
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/SET DE ALIMENTACIÓN.jpg">
+
+                <h3>Set alimentación bebé</h3>
+
+                <p>
+
+                    Diseñado para facilitar la alimentación de los más pequeños, este set incluye utensilios ergonómicos y seguros.
+
+Los materiales son libres de BPA, garantizando la salud y el bienestar del bebé. Además, su diseño colorido y atractivo estimula el interés del niño por la comida.
+
+Ideal para introducir sólidos de manera divertida y práctica.
+
+                </p>
+
+                <span>$20.000</span>
+
+                <button onclick="agregarCarrito('Set alimentación bebé',200000)">
+                    Agregar
+                </button>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/TINA INFLABLE.jpg">
+
+                <h3>Tina inflable para bebé</h3>
+
+                <p>
+
+                    Diseñada para proporcionar comodidad y seguridad, la tina inflable para bebé es ideal para el baño de los más pequeños. Su material suave y resistente asegura un entorno seguro y agradable durante el baño.
+
+Fácil de inflar y desinflar, se puede almacenar sin esfuerzo. Además, su diseño ligero permite transportarla con facilidad, perfecta para viajar o usar en casa.
+
+                </p>
+
+                <span>$30.000</span>
+
+                <button onclick="agregarCarrito('Tina inflable para bebé',35000)">
+                    Agregar
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ILUMINACIÓN -->
+
+    <section class="categoria-section categoria iluminacion">
+
+        <h2>💡 Iluminación</h2>
+
+        <div class="productos-grid">
+
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/38.jfif">
+
+                <h3>Aro de Luz 38</h3>
+
+                <p>
+
+                    El aro de luz de 38 cm proporciona una iluminación uniforme y ajustable, ideal para fotografía, videografía y transmisión en vivo.
+
+Incluye un trípode ajustable que permite una fácil configuración y estabilidad en diversas superficies. Su diseño compacto lo hace perfecto para uso en interiores y exteriores.
+
+                </p>
+
+                <span>$43.000</span>
+
+                <button onclick="agregarCarrito('Aro de Luz 38',43000)">
+                    Agregar
+                </button>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/33.jfif">
+
+                <h3>Aro de luz 33</h3>
+
+                <p>
+
+                    El aro de luz de 33 cm proporciona una iluminación uniforme y suave, ideal para fotografía y video.
+
+Incluye un trípode ajustable, que permite una fácil configuración y estabilidad en diferentes superficies. Su diseño portátil facilita el transporte, mientras que los múltiples niveles de brillo garantizan versatilidad para diversas situaciones de grabación.
+
+                </p>
+
+                <span>$30.000</span>
+
+                <button onclick="agregarCarrito('Aro de luz 33',30000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/3D 36.jfif">
+
+                <h3>Aro de luz 3D 36 RGB</h3>
+
+                <p>
+
+                    Con su diseño innovador, el aro de luz 3D 36 RGB ofrece una iluminación vibrante y ajustable, perfecta para sesiones de fotografía, maquillaje o videoconferencias.
+
+Sus múltiples modos de color y niveles de brillo permiten personalizar la atmósfera según tus necesidades. Además, su estructura ligera y portátil facilita su uso en cualquier entorno.
+
+                </p>
+
+                <span>$38.000</span>
+
+                <button onclick="agregarCarrito('Aro de luz 3D 36 RGB',38000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/MJ 30.jfif">
+
+                <h3>Aro de Luz MJ 30</h3>
+
+                <p>
+
+                    El aro de luz MJ 30 ofrece una iluminación uniforme y ajustable, ideal para fotografía, maquillaje o videoconferencias. Con múltiples niveles de brillo y temperatura de color, se adapta a diferentes necesidades y ambientes.
+
+Su diseño portátil permite un fácil transporte, mientras que su base ajustable brinda estabilidad y versatilidad en su uso. Perfecto para quienes buscan mejorar su iluminación de manera práctica y efectiva.
+
+                </p>
+
+                <span>$33.000</span>
+
+                <button onclick="agregarCarrito('Aro de Luz MJ 30',33000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/MJ 36.jfif">
+
+                <h3>Aro de luz MJ 36</h3>
+
+                <p>
+
+                    Con un diseño elegante y funcional, el aro de luz MJ 36 ofrece una iluminación uniforme y ajustable, ideal para fotografía y videollamadas.
+
+Su tamaño compacto permite un fácil transporte, mientras que sus múltiples niveles de brillo y temperatura de color garantizan la adaptación a diferentes ambientes y necesidades creativas.
+
+Incluye un soporte ajustable para mayor versatilidad en el uso.
+
+                </p>
+
+                <span>$36.000</span>
+
+                <button onclick="agregarCarrito('Aro de luz MJ 36',36000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ARO DE LUZ.jfif">
+
+                <h3>Aro de Luz MJ 45</h3>
+
+                <p>
+
+                    Con un diseño versátil y moderno, el aro de luz MJ 45 proporciona una iluminación uniforme y ajustable, ideal para sesiones de fotografía, grabaciones y maquillaje. Su estructura es fácil de montar y transportar, lo que lo convierte en una herramienta práctica para profesionales y aficionados.
+
+Además, cuenta con múltiples niveles de brillo y temperaturas de color, permitiendo adaptarse a diferentes ambientes y necesidades. La compatibilidad con soportes estándar facilita su uso en diversas configuraciones.
+                </p>
+
+                <span>$65.000</span>
+
+                <button onclick="agregarCarrito('Aro de Luz MJ 45',65000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/RGB 3D.jfif">
+
+                <h3>Aro de luz RGB 3D 26</h3>
+
+                <p>
+
+                    Con un diseño innovador, el aro de luz RGB 3D de 26 pulgadas ofrece una iluminación versátil y ajustable, ideal para fotografía, videollamadas y creación de contenido.
+
+Sus múltiples modos de color y temperatura de luz permiten personalizar el ambiente según las necesidades del usuario. Además, su estructura ligera y portátil facilita su uso en diferentes entornos.
+
+                </p>
+
+                <span>$29.000</span>
+
+                <button onclick="agregarCarrito('Aro de luz RGB 3D 26',29000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/NEON 5 MTS.jfif">
+
+                <h3>Cinta led luz neón 5 mts</h3>
+
+                <p>
+
+                    La cinta LED de luz neón de 5 metros es ideal para crear ambientes vibrantes y personalizados. Su diseño flexible permite adaptarse a diversas superficies, facilitando la instalación en interiores y exteriores.
+
+                    Con una iluminación uniforme y colores brillantes, esta cinta es perfecta para decorar espacios, eventos y fiestas. Además, es energéticamente eficiente, lo que la convierte en una opción sostenible para quienes buscan realzar su entorno con estilo.
+
+                </p>
+
+                <span>$25.000</span>
+
+                <button onclick="agregarCarrito('Cinta led luz neón 5 mts',25000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/LAMPARA DE ESCRITORIO.jfif">
+
+                <h3>TLámpara de escritorio dorada</h3>
+
+                <p>
+
+                    lámpara de escritorio LED inalámbrica de color dorado de la marca MIOBLUE.
+Iluminación: Cuenta con fuente de luz LED con tres modos de color (blanco, blanco cálido y cálido) y atenuación continua.
+
+                </p>
+
+                <span>$18.000</span>
+
+                <button onclick="agregarCarrito('Lámpara de escritorio dorada',18000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/LAMPARA PLEGABLE.jfif">
+
+                <h3>Lámpara led plegable</h3>
+
+                <p>
+
+                    lámpara LED plegable e inteligente, diseñada para ser versátil y portátil.
+
+Características Principales
+Iluminación Ajustable: Ofrece típicamente 3 modos de color (blanco cálido, neutro y frío) y niveles de brillo regulables mediante control táctil.
+
+                </p>
+
+                <span>$16.000</span>
+
+                <button onclick="agregarCarrito('Lámpara led plegable',16000)">
+                    Agregar
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ACCESORIOS -->
+
+    <section class="categoria-section categoria accesorios">
+
+        <h2>Accesorios ⚡</h2>
+
+        <div class="productos-grid">
+
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ADAPTADOR CELULAR.webp">
+
+                <h3>Adaptador celular</h3>
+
+                <p>
+
+                   Conectividad óptima para tus dispositivos móviles, el adaptador celular permite la transferencia de datos y la carga rápida de manera eficiente.
+
+Compatible con una variedad de modelos, este adaptador es fácil de usar y ofrece una conexión estable. Ideal para quienes necesitan mantener sus dispositivos siempre listos.
+
+                </p>
+
+                <span>$20.000</span>
+
+                <button onclick="agregarCarrito('Adaptador celular',20000)">
+                    Agregar
+                </button>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ALMOHADA.webp">
+
+                <h3>Almohada masajeadora eléctrica de cuello</h3>
+
+                <p>
+
+                    Disfruta de una experiencia de relajación profunda con la almohada masajeadora eléctrica de cuello. Diseñada para aliviar la tensión muscular, esta almohada cuenta con múltiples configuraciones de masaje y calor, adaptándose a tus necesidades.
+
+Su diseño ergonómico se ajusta perfectamente al contorno del cuello, proporcionando soporte y comodidad. Ideal para usar en casa, en la oficina o durante viajes, es una excelente opción para quienes buscan un alivio efectivo del estrés y la fatiga.
+
+                </p>
+
+                <span>$45.000</span>
+
+                <button onclick="agregarCarrito('Almohada masajeadora eléctrica de cuello',45000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ASIENTO INODORO.jpg">
+
+                <h3>Asiento adaptador de inodoro con escalera</h3>
+
+                <p>
+
+                    reductor de baño con escalera diseñado para facilitar el entrenamiento de los niños pequeños en el uso del inodoro de forma autónomo
+
+                </p>
+
+                <span>$58.000</span>
+
+                <button onclick="agregarCarrito('Asiento adaptador de inodoro con escalera',58000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ASPIRADORA DE MANO.webp">
+
+                <h3>Aspiradora de mano inalámbrica lonvac</h3>
+
+                <p>
+
+                    Con un diseño ergonómico y ligero, la aspiradora de mano inalámbrica Lonvac permite una limpieza rápida y eficiente en cualquier lugar. Su potente succión y batería recargable garantizan un rendimiento duradero, ideal para eliminar polvo y suciedad de superficies difíciles de alcanzar.
+
+Gracias a su versatilidad, es perfecta para el hogar, el automóvil o cualquier espacio reducido. Además, su fácil mantenimiento y almacenamiento hacen que sea una herramienta práctica para el día a día.
+
+                </p>
+
+                <span>$45.000</span>
+
+                <button onclick="agregarCarrito('Aspiradora de mano inalámbrica lonvac',45000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ASPIRADORA X56.webp">
+
+                <h3>Aspiradora X56</h3>
+
+                <p>
+
+                    Con un potente motor, la aspiradora X56 ofrece una succión eficiente para eliminar el polvo y la suciedad de diversas superficies. Su diseño compacto facilita el almacenamiento y el manejo, ideal para espacios reducidos.
+
+Incluye múltiples accesorios que permiten alcanzar rincones difíciles y limpiar tapicerías con facilidad. Su filtro lavable asegura un mantenimiento sencillo y prolonga la vida útil del equipo.
+
+                </p>
+
+                <span>$110.000</span>
+
+                <button onclick="agregarCarrito('Aspiradora X56',110000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ASPIRADORA 2 EN 1.webp">
+
+                <h3>Aspiradora y sopladora 2 en 1</h3>
+
+                <p>
+
+                   Con un diseño versátil, esta aspiradora y sopladora 2 en 1 ofrece una solución eficiente para la limpieza de interiores y exteriores.
+
+Su potente motor garantiza un rendimiento efectivo, mientras que su ligereza permite un manejo cómodo y ágil. Ideal para eliminar polvo, hojas y suciedad de diversas superficies.
+
+Con un simple cambio de función, se adapta a tus necesidades de limpieza de manera rápida y sencilla.
+
+                </p>
+
+                <span>$45.000</span>
+
+                <button onclick="agregarCarrito('Aspiradora y sopladora 2 en 1',45000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/PISTOLA MASAJEADORA.webp">
+
+                <h3>Pistola masajeadora frío ~ calor</h3>
+
+                <p>
+
+                    La pistola masajeadora frío - calor ofrece una experiencia de relajación versátil, combinando terapia de calor y frío para aliviar tensiones musculares. Su diseño ergonómico permite un manejo cómodo, mientras que diversas configuraciones de temperatura adaptan el tratamiento a tus necesidades específicas. Ideal para el uso en casa o en el gimnasio, promueve la recuperación y el bienestar general
+
+                </p>
+
+                <span>$50.000</span>
+
+                <button onclick="agregarCarrito('Pistola masajeadora frío ~ calor',50000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/CENICERO INTELIGENTE.webp">
+
+                <h3>Cenicero inteligente</h3>
+
+                <p>
+
+                    cenicero inteligente sin humo y purificador de aire.
+                </p>
+
+                <span>$18.000</span>
+
+                <button onclick="agregarCarrito('Cenicero Inteligente',18000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/CEPILLO DIENTES.webp">
+
+                <h3>Cepillo de dientes eléctrico</h3>
+
+                <p>
+
+                    Con tecnología de limpieza avanzada, este cepillo de dientes eléctrico ofrece un cuidado bucal eficaz y cómodo. Su cabezal integrado garantizan una limpieza profunda y un cepillado adecuado en cada uso.
+
+Diseñado para adaptarse a las necesidades de cada usuario, facilita el mantenimiento de una buena higiene dental. Ideal para quienes buscan mejorar su rutina diaria de cuidado oral.
+
+                </p>
+
+                <span>$14.000</span>
+
+                <button onclick="agregarCarrito('Cepillo de dientes eléctrico',14000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/CEPILLO MULTI.webp">
+
+                <h3>Cepillo de vapor multifuncional para mascotas</h3>
+
+                <p>
+
+                    Con una potente función de vapor, el cepillo de vapor multifuncional para mascotas elimina eficazmente el pelo y la suciedad de tu mascota. Su diseño ergonómico permite un manejo cómodo, facilitando la limpieza
+
+Ideal para todo tipo de pelajes, este cepillo no solo limpia, sino que también ayuda a desinfectar, manteniendo a tu mascota y su entorno más saludables.
+
+                </p>
+
+                <span>$15.000</span>
+
+                <button onclick="agregarCarrito('Cepillo de vapor multifuncional para mascotas',15000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/CINTURON TERMICO.webp">
+
+                <h3>Cinturón térmico para cólicos</h3>
+
+                <p>
+
+                    La manta térmica para cólicos ofrece un alivio efectivo al proporcionar calor reconfortante en áreas afectadas. Su diseño se adapta perfectamente al cuerpo, facilitando el uso en diferentes partes, como el abdomen.
+
+Fabricada con materiales suaves y cómodos, es ideal para combatir las molestias menstruales y calambres. Simple de usar, se calienta rápidamente y se puede ajustar a la temperatura deseada.
+                </p>
+
+                <span>$25.000</span>
+
+                <button onclick="agregarCarrito('Cinturón térmico para cólicos',25000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/COLCHON PARA VEHICULOS.webp">
+
+                <h3>Colchón inflable para vehículos</h3>
+
+                <p>
+
+                   Diseñado para ofrecer comodidad en viajes, el colchón inflable para vehículos se adapta fácilmente al espacio interior de su auto.
+
+Fabricado con materiales duraderos, proporciona un soporte adecuado para un descanso reparador. Su inflado y desinflado son rápidos y sencillos, lo que facilita su uso en cualquier aventura. Ideal para viajes largos o acampadas, este colchón es una solución práctica para dormir en el vehículo.
+
+                </p>
+
+                <span>$48.000</span>
+
+                <button onclick="agregarCarrito('Colchón inflable para vehículos',48000)">
+                    Agregar
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- UTENSILIOS DE COCINA -->
+
+    <section class="categoria-section categoria cocina">
+
+        <h2>Utensilios de Cocina🍳</h2>
+
+        <div class="productos-grid">
+
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ESTUFA ELECTRICA.webp">
+
+                <h3>Estufa eléctrica 1 puesto</h3>
+
+                <p>
+
+                   Con un diseño compacto, la estufa eléctrica 1 puesto es ideal para calentar en espacios reducidos. ofreciendo comodidad y funcionalidad.
+
+Perfecta para uso en el hogar o la oficina. 
+
+                </p>
+
+                <span>$20.000</span>
+
+                <button onclick="agregarCarrito('Recipientes',20000)">
+                    Agregar
+                </button>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/EXPRIMIDOR DE NARANJA.jpg">
+
+                <h3>Exprimidor de naranja eléctrico</h3>
+
+                <p>
+
+                    Con un diseño ergonómico y eficiente, el exprimidor de naranja eléctrico permite extraer jugo fresco de manera rápida y sencilla. Su potente motor asegura un rendimiento óptimo, mientras que su sistema de doble conicidad maximiza la extracción de jugo.
+
+Ideal para el hogar o la oficina, este exprimidor facilita la preparación de bebidas saludables y refrescantes. Su fácil limpieza y almacenamiento compacto lo convierten en un aliado perfecto en la cocina.
+
+                </p>
+
+                <span>$30.000</span>
+
+                <button onclick="agregarCarrito('Exprimidor de naranja eléctrico',30000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/FUENTE DE CHOCOLATE.jpg">
+
+                <h3>Fuente de chocolate</h3>
+
+                <p>
+
+                    Con un diseño elegante y funcional, la fuente de chocolate permite disfrutar de un delicioso flujo de chocolate derretido. Ideal para fiestas y reuniones, su funcionamiento es sencillo y seguro, facilitando la creación de un ambiente festivo.
+
+Compatible con diferentes tipos de chocolate, este dispositivo es fácil de limpiar y almacenar, convirtiéndose en un elemento esencial para quienes aman los postres. Ideal para acompañar frutas, malvaviscos y galletas.
+
+                </p>
+
+                <span>$45.000</span>
+
+                <button onclick="agregarCarrito('Fuente de chocolate',45000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/HERVIDOR DE AGUA.webp">
+
+                <h3>Hervidor de agua 2 litros</h3>
+
+                <p>
+
+                    Hervidor de agua 2 litros
+
+                </p>
+
+                <span>$39.000</span>
+
+                <button onclick="agregarCarrito('Hervidor de agua 2 litros',39000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/HERVIDOR DE HUEVOS.webp">
+
+                <h3>Hervidor eléctrico de huevos</h3>
+
+                <p>
+
+                    Este hervidor eléctrico de huevos permite cocinar hasta seis huevos a la vez, garantizando resultados perfectos y consistentes.
+
+Con su diseño compacto y fácil de usar, incluye un medidor de agua y un indicador de cocción para mayor comodidad.
+
+Ideal para quienes buscan una manera rápida y eficiente de disfrutar huevos duros, pasados por agua o escalfados.
+
+                </p>
+
+                <span>$22.000</span>
+
+                <button onclick="agregarCarrito('Hervidor eléctrico de huevos',22000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ADOBO.jpg">
+
+                <h3>Inyector de Adobo</h3>
+
+                <p>
+
+                    Diseñado para facilitar la aplicación uniforme de adobos, el inyector de adobo permite marinar carnes y aves de manera efectiva. Su construcción robusta asegura durabilidad, mientras que la aguja de acero inoxidable permite penetrar fácilmente en la carne, garantizando que los sabores se distribuyan de manera óptima.
+
+Ideal para quienes buscan realzar el sabor de sus platillos, este inyector es una herramienta esencial en la cocina. Su uso es sencillo.
+
+                </p>
+
+                <span>$23.000</span>
+
+                <button onclick="agregarCarrito('Inyector de adobo',23000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ABREBOTELLAS.webp">
+
+                <h3>Juego de abrebotellas eléctrico de vino</h3>
+
+                <p>
+
+                    Este juego de abrebotellas eléctrico de vino facilita la apertura de botellas con solo presionar un botón. Su diseño ergonómico y ligero permite un manejo cómodo, mientras que su potente motor garantiza que el corcho se extraiga sin esfuerzo.
+
+Ideal para cualquier amante del vino, incluye un cortador de aluminio para las cápsulas, asegurando una experiencia de servicio sin complicaciones.
+
+                </p>
+
+                <span>$25.000</span>
+
+                <button onclick="agregarCarrito('Juego de abrebotellas eléctrico de vino',25000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ACCESORIOS VINO.webp">
+
+                <h3>Juego de accesorios para vino</h3>
+
+                <p>
+
+                Este juego de accesorios para vino incluye todo lo necesario para disfrutar de una experiencia de cata perfecta. Con un sacacorchos, un vertedor y un anillo antigoteo, cada elemento está diseñado para facilitar el servicio y conservar el sabor del vino.
+
+Ideal para aficionados y expertos, este conjunto es un complemento esencial para cualquier amante del vino. Su diseño elegante y funcionalidad aseguran que cada botella se sirva con estilo y precisión.
+
+                </p>
+
+                <span>$18.000</span>
+
+                <button onclick="agregarCarrito('Juego de accesorios para vino',18000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/LICUADORA15.webp">
+
+                <h3>Licuadora 1.5 litros</h3>
+
+                <p>
+
+                    Con una capacidad de 1.5 litros, esta licuadora es ideal para preparar batidos, sopas y salsas. Su diseño compacto permite un fácil almacenamiento, mientras que su potente motor garantiza una mezcla eficiente y rápida de ingredientes.
+
+El vaso de vidrio es resistente y fácil de limpiar, y cuenta con un sistema de seguridad que evita el funcionamiento si no está correctamente ensamblado.
+
+Ya sea para uso diario o para ocasiones especiales, esta licuadora es una herramienta versátil en la cocina.
+
+                </p>
+
+                <span>$75.000</span>
+
+                <button onclick="agregarCarrito('Licuadora 1.5 litros',75000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/LICUADORAPORTATIL.jpg">
+
+                <h3>Licuadora portátil recargable</h3>
+
+                <p>
+
+                    Con un diseño portátil y recargable, esta licuadora es ideal para preparar batidos, jugos y mezclas en cualquier lugar. Su potente motor y cuchillas de acero inoxidable garantizan una mezcla eficiente y homogénea.
+
+
+
+Compacta y fácil de usar, permite una limpieza sencilla, lo que la convierte en la compañera perfecta para un estilo de vida activo.
+
+                </p>
+
+                <span>$15.000</span>
+
+                <button onclick="agregarCarrito('Licuadora portátil recargable',15000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/LONCHERA ELECTRICA PORTATIL.webp">
+
+                <h3>Lonchera eléctrica portátil</h3>
+
+                <p>
+
+                    La lonchera eléctrica portátil es ideal para calentar y mantener la temperatura de tus alimentos en cualquier lugar. Con un diseño compacto y ligero, permite disfrutar de comidas calientes en el trabajo, la escuela o durante viajes.
+
+Su funcionamiento es sencillo: solo conecta la lonchera a una fuente de energía y en poco tiempo, tus platillos estarán listos para disfrutar.
+
+Además, su capacidad adecuada facilita el transporte de porciones generosas, mientras que los materiales de calidad aseguran durabilidad y fácil limpieza.
+
+                </p>
+
+                <span>$45.000</span>
+
+                <button onclick="agregarCarrito('Lonchera eléctrica portátil',45000)">
+                    Agregar
+                </button>
+
+            </div>
+            <div class="producto">
+
+                <img src="IMAGESPRODUCTOS/ALGODON.jpg">
+
+                <h3>Máquina para hacer algodón</h3>
+
+                <p>
+                    La máquina de algodón es ideal para crear deliciosos y esponjosos algodones de azúcar en casa. Su diseño compacto y fácil de usar permite preparar este dulce clásico en minutos.
+                    Con un simple botón de encendido y un recipiente para el azúcar, es perfecta para fiestas y eventos. Disfruta de la diversión y la nostalgia de hacer algodón de azúcar de manera sencilla y rápida.
+
+            
+                </p>
+
+                <span>$45.000</span>
+
+                <button onclick="agregarCarrito('Máquina para hacer algodón',45000)">
+                    Agregar
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+<script src="script.js"></script>
+
+<script>
+
+function buscarProductos(){
+
+    let input =
+    document.getElementById("busqueda")
+    .value
+    .toLowerCase();
+
+    let productos =
+    document.querySelectorAll(".producto");
+
+    productos.forEach(producto => {
+
+        let texto =
+        producto.innerText.toLowerCase();
+
+        if(texto.includes(input)){
+
+            producto.style.display = "block";
+
+        }
+
+        else{
+
+            producto.style.display = "none";
+
+        }
+
+    });
+
+}
+
+function mostrarCategoria(categoria){
+
+    let categorias =
+    document.querySelectorAll(".categoria");
+
+    categorias.forEach(seccion => {
+
+        if(
+            categoria === "todos"
+            ||
+            seccion.classList.contains(categoria)
+        ){
+
+            seccion.style.display = "block";
+
+        }
+
+        else{
+
+            seccion.style.display = "none";
+
+        }
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
